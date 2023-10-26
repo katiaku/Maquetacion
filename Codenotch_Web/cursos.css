@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background: #0000FF;
+    width: 100vw;
+    margin-top: 100px;
+    color: white;
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursos {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    gap: 3rem;
+}
+
+h1 {
+    color: #11F193;
+    text-align: center;
+    padding-block: 2rem;
+}

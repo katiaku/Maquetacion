@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background: #0000FF;
+    width: 100vw;
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    height: calc(100vh - 150px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__content {
+    width: 50%;
+}
+
+.hero__content p {
+    font-size: 1.7rem;
+}
+
+.hero__content h1 {
+    font-size: 4rem;
+}
+
+.hero__content span {
+    color: #11F193;
+}
+
+.hero__content button {
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    background-color: #11F193;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+button a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+.empresas {
+    background-color: white;
+    color:#0000FF;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-top: 1.8rem;
+}
+
+.objetivos {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.8rem;
+    padding-bottom: 2.5rem;
+}
+
+.objetivos > p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #11F193;
+}
+
+.descripcion {
+    width: 40%;
+}
+
+.estadistica {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+
+.datos {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+}
+
+.numero {
+    color: #11F193;
+    font-size: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.info > p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #11F193;
+}
+
+.cursos {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding-bottom: 3.5rem;
+    text-align: center;
+}
+
+.cursos p:nth-child(2) {
+    font-size: 1.3rem;
+}
+
+.cursos button {
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    background-color: #11F193;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.porque {
+    background-color: white;
+    color: black;
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.porque > p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:#0000FF;
+}
+
+.porque__container {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    margin-left: 3.8rem;
+}
+
+.porque__container img {
+    width: 500px;
+    height: 300px;
+}
+
+.porque__container div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: white;
+    color: black;
+    padding-inline: 1rem;
+}
+
+.reserva {
+    margin-bottom: 100px;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reserva > p {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.reserva__container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reserva button {
+    width: 40%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    background-color: #11F193;
+    cursor: pointer;
+    margin-top: 2rem;
+}

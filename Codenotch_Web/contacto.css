@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact {
+    background: #0000FF;
+    width: 100vw;
+    height: calc(100vh - 150px);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    background: white;
+    height: 80%;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+}
+
+input[type="text"] {
+    height: 30px;
+    width: 250px;
+    padding-inline: .8rem;
+}
+
+.input {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.check {
+    font-size: small;
+}
+
+button {
+    width: 60%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    background-color: #11F193;
+    cursor: pointer;
+    align-self: center;
+}
+
+button a {
+    text-decoration: none;
+    font-weight: bolder;
+}
