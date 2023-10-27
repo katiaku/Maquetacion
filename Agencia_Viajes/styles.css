@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background: white;
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#logo {
+    width: 8rem;
+    margin-left: 4.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-right: 6.9rem;
+    gap: 10rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-variant: small-caps;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    color: #009C9D;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    top: 4rem;
+    background-image: url("./img/hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero__container {
+    width: 50%;
+    padding-block: 10rem;
+    padding-inline: 7rem;
+}
+
+.hero__container h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.hero__container p {
+    color: white;
+    width: 70%;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+
+.hero__container button {
+    background-color: white;
+    width: fit-content;
+    padding-block: .8rem;
+    padding-inline: 1.2rem;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.hero__container a {
+    text-decoration: none;
+    color: #034A58;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.hero__container a:hover {
+    color: #009C9D;
+}
+
+.ofertas {
+    padding-inline: 6.9rem;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.ofertas img {
+    width: calc(100vw / 3);
+}
+
+.oferta {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.ofertas h3 {
+    color: #034A58;
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+.ofertas p {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    color: rgb(48, 48, 48);
+}
+
+.ofertas button {
+    border: 3px solid #009C9D;
+    width: fit-content;
+    padding-block: .8rem;
+    padding-inline: 1.2rem;
+    background-color: white;
+    border-radius: 2rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.ofertas a {
+    text-decoration: none;
+    color: #009C9D;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contacto {
+    background-color: #009C9D;
+    padding-inline: 6.9rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto > div {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+form {
+    color: white;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+input {
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    outline: none;
+    padding: .5rem;
+    font-size: 1.1rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+.contacto button {
+    background-color: #034A58;
+    width: 100%;
+    padding-block: .8rem;
+    padding-inline: 1.2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contacto button:hover {
+    background-color: #034A58;
+    color: white;
+}
+
+form button {
+    margin-top: 2rem;
+}
+
+footer {
+    height: 3rem;
+    font-size: .9rem;
+    padding-inline: 6.9rem;
+    display: flex;
+    align-items: center;
+    background-color:#034A58;
+    color: white;
+}

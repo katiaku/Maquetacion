@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Globe - Agencia de Viajes</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img id="logo" src="./img/logo.png" alt="logo">
+        </figure>
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__container">
+                <h1>Descubre el mundo con nosotros</h1>
+                <p>En Globe, hacemos realidad tus sueños de aventura y exploración. 
+                    Con una pasión por los destinos exóticos y un compromiso con la 
+                    satisfacción del cliente, te ofrecemos experiencias de viaje 
+                    excepcionales.</p>
+                <button><a href="#ofertas">Descubrir ofertas</a></button>    
+            </div>
+        </section>
+        <section id="ofertas" class="ofertas">
+                <div class="oferta">
+                    <img src="./img/newyork.jpg" alt="newyork">
+                    <div>
+                        <h3>New York</h3>
+                        <p>¡Descubre la ciudad que nunca duerme! Sumérgete en la vibrante energía de esta metrópolis 
+                            icónica, donde los rascacielos se alzan majestuosamente hacia el cielo y la cultura abunda 
+                            en cada esquina. Explora lugares emblemáticos como Times Square, Central Park, la Estatua 
+                            de la Libertad y el Museo Metropolitano de Arte, mientras disfrutas de la deliciosa 
+                            gastronomía de todo el mundo en los diversos restaurantes de la ciudad. Nuestros paquetes 
+                            de viaje a Nueva York te ofrecen la oportunidad de experimentar el glamour de Broadway, 
+                            pasear por las calles de Manhattan y descubrir el auténtico espíritu de esta ciudad cosmopolita. 
+                            ¡Prepárate para una experiencia inolvidable en la Gran Manzana!</p>
+                        <button><a href="#contacto">Más información</a></button>
+                    </div>
+                </div>
+                <div class="oferta">
+                    
+                    <div>
+                        <h3>Kyoto</h3>
+                        <p>Kyoto, la antigua capital de Japón, te transportará a un mundo de tradiciones centenarias, 
+                            templos majestuosos y jardines exquisitos. Explora los caminos de bambú de Arashiyama, 
+                            maravíllate con la arquitectura impresionante de templos como el Kinkaku-ji (Pabellón Dorado) 
+                            y el Fushimi Inari Taisha con sus miles de torii rojos. Degusta la auténtica cocina kaiseki 
+                            y experimenta la ceremonia del té en un entorno tranquilo. Kyoto te ofrece un viaje al pasado 
+                            de Japón en medio de un paisaje espectacular de montañas y bosques. Sumérgete en esta ciudad 
+                            mágica donde el encanto tradicional y la sofisticación moderna se entrelazan de manera única.</p>
+                        <button><a href="#contacto">Más información</a></button>
+                    </div>
+                    <img src="./img/kyoto.jpg" alt="kyoto">
+                </div>
+                <div class="oferta">
+                    <img src="./img/bali.jpg" alt="bali">
+                    <div>
+                        <h3>Bali</h3>
+                        <p>Descubre la isla paradisíaca de Bali y experimenta un mundo de belleza natural y cultura exquisita. 
+                            Bali, conocida como la "Isla de los Dioses", te recibirá con playas de arena blanca, aguas 
+                            cristalinas y selvas tropicales exuberantes. Explora templos antiguos como el majestuoso Uluwatu 
+                            y el enigmático Tanah Lot, mientras te sumerges en las ofrendas y rituales espirituales de la isla. 
+                            Disfruta de emocionantes deportes acuáticos en las playas de Kuta y Nusa Dua, o encuentra la paz 
+                            interior en retiros de yoga y meditación en Ubud. La gastronomía balinesa te sorprenderá con sabores 
+                            únicos, y los mercados locales te tentarán con artesanías tradicionales y textiles coloridos. Bali 
+                            es un destino que combina a la perfección la relajación y la aventura, ofreciéndote una experiencia 
+                            inolvidable en un paraíso tropical.</p>
+                        <button><a href="#contacto">Más información</a></button>
+                    </div>
+                </div>
+        </section>
+        <section id="contacto" class="contacto">
+            <div>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="origen">Origen: </label>
+                        <input type="text" id="origen" name="origen">
+                    </div>
+                    <div>
+                        <label for="destino">Destino: </label>
+                        <input type="text" id="destino" name="destino">
+                    </div>
+                    <div>
+                        <label for="numPersonas">Número de personas: </label>
+                        <input type="number" id="numPersonas" min="1" max="10" name="numPersonas">
+                    </div>
+                    <div>
+                        <label for="fecha">Fecha: </label>
+                        <input type="date" id="fecha" min="2023-01-01" max="2025-12-31" name="fecha">
+                    </div>
+                    <button>Solicitar información</button>
+                </form>
+                <button>Filtrar datos</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Globe | All rights reserved</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
