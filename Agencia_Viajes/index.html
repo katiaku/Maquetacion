@@ -79,7 +79,7 @@
         </section>
         <section id="contacto" class="contacto">
             <div>
-                <form>
+                <form id="formulario">
                     <div>
                         <label for="nombre">Nombre: </label>
                         <input type="text" id="nombre" name="nombre">
@@ -100,15 +100,16 @@
                         <label for="fecha">Fecha: </label>
                         <input type="date" id="fecha" min="2023-01-01" max="2025-12-31" name="fecha">
                     </div>
-                    <button>Solicitar información</button>
+                    <button id="solicitarInfo" type="submit">Solicitar información</button>
                 </form>
-                <button>Filtrar datos</button>
+                <button id="filter" type="button">Filtrar datos</button>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2023 Globe | All rights reserved</p>
     </footer>
+
     <script src="index.js"></script>
 </body>
 </html>
