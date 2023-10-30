@@ -1,0 +1,46 @@
+.home {
+    display: flex;
+    align-items: center;
+    padding-block: 4rem;
+}
+
+.home > div {
+    margin-bottom: 4rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.home h1 {
+    color: var(--purple);
+    font-size: 5.5rem;
+}
+
+.home h2 {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.home > div p {
+    color: var(--gray);
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.home img {
+    width: 45vw;
+}
+
+.home a {
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    text-align: end;
+}
+
+.home a:hover {
+    color: var(--purple);
+}
