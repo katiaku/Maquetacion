@@ -47,13 +47,18 @@ input {
 }
 
 input[type="submit"] {
-    background-color: var(--purple);
+    background-color: #9559d1;
     color: white;
     border: none;
     height: 2.7rem;
     width: 9rem;
     border-radius: 2rem;
     cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--purple);
+    transition: background-color 1s linear;
 }
 
 textarea {
