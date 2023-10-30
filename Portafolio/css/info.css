@@ -22,4 +22,5 @@
 
 .info a:hover {
     color: var(--purple);
+    transition: color 1s linear;
 }

@@ -5,12 +5,12 @@
 }
 
 .home > div {
-    margin-bottom: 4rem;
-    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
+    animation-duration: 1.5s;
+    animation-name: slidein;
 }
 
 .home h1 {
@@ -27,11 +27,13 @@
     color: var(--gray);
     font-size: 1.3rem;
     line-height: 2.5rem;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
 }
 
 .home img {
     width: 45vw;
+    animation-duration: 3.5s;
+    animation-name: slidein;
 }
 
 .home a {

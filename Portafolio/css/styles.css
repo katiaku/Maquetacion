@@ -45,6 +45,7 @@ header a {
 
 header a:hover {
     color: var(--purple);
+    transition: color 1s linear;
 }
 
 section {
@@ -86,4 +87,15 @@ footer a {
 
 footer a:hover {
     color: var(--purple);
+    transition: color 1s linear;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    
+    to {
+        margin-left: 0%;
+    }
 }
