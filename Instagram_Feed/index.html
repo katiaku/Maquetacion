@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>Instagram Feed</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <div>
+                <svg aria-label="Instagram" fill="currentColor" height="29" role="img" viewBox="32 4 113 32" width="103">
+                    <title>Instagram</title>
+                    <path clip-rule="evenodd" d="M37.82 4.11c-2.32.97-4.86 3.7-5.66 7.13-1.02 4.34 3.21 6.17 3.56 5.57.4-.7-.76-.94-1-3.2-.3-2.9 1.05-6.16 2.75-7.58.32-.27.3.1.3.78l-.06 14.46c0 3.1-.13 4.07-.36 5.04-.23.98-.6 1.64-.33 1.9.32.28 1.68-.4 2.46-1.5a8.13 8.13 0 0 0 1.33-4.58c.07-2.06.06-5.33.07-7.19 0-1.7.03-6.71-.03-9.72-.02-.74-2.07-1.51-3.03-1.1Zm82.13 14.48a9.42 9.42 0 0 1-.88 3.75c-.85 1.72-2.63 2.25-3.39-.22-.4-1.34-.43-3.59-.13-5.47.3-1.9 1.14-3.35 2.53-3.22 1.38.13 2.02 1.9 1.87 5.16ZM96.8 28.57c-.02 2.67-.44 5.01-1.34 5.7-1.29.96-3 .23-2.65-1.72.31-1.72 1.8-3.48 4-5.64l-.01 1.66Zm-.35-10a10.56 10.56 0 0 1-.88 3.77c-.85 1.72-2.64 2.25-3.39-.22-.5-1.69-.38-3.87-.13-5.25.33-1.78 1.12-3.44 2.53-3.44 1.38 0 2.06 1.5 1.87 5.14Zm-13.41-.02a9.54 9.54 0 0 1-.87 3.8c-.88 1.7-2.63 2.24-3.4-.23-.55-1.77-.36-4.2-.13-5.5.34-1.95 1.2-3.32 2.53-3.2 1.38.14 2.04 1.9 1.87 5.13Zm61.45 1.81c-.33 0-.49.35-.61.93-.44 2.02-.9 2.48-1.5 2.48-.66 0-1.26-1-1.42-3-.12-1.58-.1-4.48.06-7.37.03-.59-.14-1.17-1.73-1.75-.68-.25-1.68-.62-2.17.58a29.65 29.65 0 0 0-2.08 7.14c0 .06-.08.07-.1-.06-.07-.87-.26-2.46-.28-5.79 0-.65-.14-1.2-.86-1.65-.47-.3-1.88-.81-2.4-.2-.43.5-.94 1.87-1.47 3.48l-.74 2.2.01-4.88c0-.5-.34-.67-.45-.7a9.54 9.54 0 0 0-1.8-.37c-.48 0-.6.27-.6.67 0 .05-.08 4.65-.08 7.87v.46c-.27 1.48-1.14 3.49-2.09 3.49s-1.4-.84-1.4-4.68c0-2.24.07-3.21.1-4.83.02-.94.06-1.65.06-1.81-.01-.5-.87-.75-1.27-.85-.4-.09-.76-.13-1.03-.11-.4.02-.67.27-.67.62v.55a3.71 3.71 0 0 0-1.83-1.49c-1.44-.43-2.94-.05-4.07 1.53a9.31 9.31 0 0 0-1.66 4.73c-.16 1.5-.1 3.01.17 4.3-.33 1.44-.96 2.04-1.64 2.04-.99 0-1.7-1.62-1.62-4.4.06-1.84.42-3.13.82-4.99.17-.8.04-1.2-.31-1.6-.32-.37-1-.56-1.99-.33-.7.16-1.7.34-2.6.47 0 0 .05-.21.1-.6.23-2.03-1.98-1.87-2.69-1.22-.42.39-.7.84-.82 1.67-.17 1.3.9 1.91.9 1.91a22.22 22.22 0 0 1-3.4 7.23v-.7c-.01-3.36.03-6 .05-6.95.02-.94.06-1.63.06-1.8 0-.36-.22-.5-.66-.67-.4-.16-.86-.26-1.34-.3-.6-.05-.97.27-.96.65v.52a3.7 3.7 0 0 0-1.84-1.49c-1.44-.43-2.94-.05-4.07 1.53a10.1 10.1 0 0 0-1.66 4.72c-.15 1.57-.13 2.9.09 4.04-.23 1.13-.89 2.3-1.63 2.3-.95 0-1.5-.83-1.5-4.67 0-2.24.07-3.21.1-4.83.02-.94.06-1.65.06-1.81 0-.5-.87-.75-1.27-.85-.42-.1-.79-.13-1.06-.1-.37.02-.63.35-.63.6v.56a3.7 3.7 0 0 0-1.84-1.49c-1.44-.43-2.93-.04-4.07 1.53-.75 1.03-1.35 2.17-1.66 4.7a15.8 15.8 0 0 0-.12 2.04c-.3 1.81-1.61 3.9-2.68 3.9-.63 0-1.23-1.21-1.23-3.8 0-3.45.22-8.36.25-8.83l1.62-.03c.68 0 1.29.01 2.19-.04.45-.02.88-1.64.42-1.84-.21-.09-1.7-.17-2.3-.18-.5-.01-1.88-.11-1.88-.11s.13-3.26.16-3.6c.02-.3-.35-.44-.57-.53a7.77 7.77 0 0 0-1.53-.44c-.76-.15-1.1 0-1.17.64-.1.97-.15 3.82-.15 3.82-.56 0-2.47-.11-3.02-.11-.52 0-1.08 2.22-.36 2.25l3.2.09-.03 6.53v.47c-.53 2.73-2.37 4.2-2.37 4.2.4-1.8-.42-3.15-1.87-4.3-.54-.42-1.6-1.22-2.79-2.1 0 0 .69-.68 1.3-2.04.43-.96.45-2.06-.61-2.3-1.75-.41-3.2.87-3.63 2.25a2.61 2.61 0 0 0 .5 2.66l.15.19c-.4.76-.94 1.78-1.4 2.58-1.27 2.2-2.24 3.95-2.97 3.95-.58 0-.57-1.77-.57-3.43 0-1.43.1-3.58.19-5.8.03-.74-.34-1.16-.96-1.54a4.33 4.33 0 0 0-1.64-.69c-.7 0-2.7.1-4.6 5.57-.23.69-.7 1.94-.7 1.94l.04-6.57c0-.16-.08-.3-.27-.4a4.68 4.68 0 0 0-1.93-.54c-.36 0-.54.17-.54.5l-.07 10.3c0 .78.02 1.69.1 2.09.08.4.2.72.36.91.15.2.33.34.62.4.28.06 1.78.25 1.86-.32.1-.69.1-1.43.89-4.2 1.22-4.31 2.82-6.42 3.58-7.16.13-.14.28-.14.27.07l-.22 5.32c-.2 5.37.78 6.36 2.17 6.36 1.07 0 2.58-1.06 4.2-3.74l2.7-4.5 1.58 1.46c1.28 1.2 1.7 2.36 1.42 3.45-.21.83-1.02 1.7-2.44.86-.42-.25-.6-.44-1.01-.71-.23-.15-.57-.2-.78-.04-.53.4-.84.92-1.01 1.55-.17.61.45.94 1.09 1.22.55.25 1.74.47 2.5.5 2.94.1 5.3-1.42 6.94-5.34.3 3.38 1.55 5.3 3.72 5.3 1.45 0 2.91-1.88 3.55-3.72.18.75.45 1.4.8 1.96 1.68 2.65 4.93 2.07 6.56-.18.5-.69.58-.94.58-.94a3.07 3.07 0 0 0 2.94 2.87c1.1 0 2.23-.52 3.03-2.31.09.2.2.38.3.56 1.68 2.65 4.93 2.07 6.56-.18l.2-.28.05 1.4-1.5 1.37c-2.52 2.3-4.44 4.05-4.58 6.09-.18 2.6 1.93 3.56 3.53 3.69a4.5 4.5 0 0 0 4.04-2.11c.78-1.15 1.3-3.63 1.26-6.08l-.06-3.56a28.55 28.55 0 0 0 5.42-9.44s.93.01 1.92-.05c.32-.02.41.04.35.27-.07.28-1.25 4.84-.17 7.88.74 2.08 2.4 2.75 3.4 2.75 1.15 0 2.26-.87 2.85-2.17l.23.42c1.68 2.65 4.92 2.07 6.56-.18.37-.5.58-.94.58-.94.36 2.2 2.07 2.88 3.05 2.88 1.02 0 2-.42 2.78-2.28.03.82.08 1.49.16 1.7.05.13.34.3.56.37.93.34 1.88.18 2.24.11.24-.05.43-.25.46-.75.07-1.33.03-3.56.43-5.21.67-2.79 1.3-3.87 1.6-4.4.17-.3.36-.35.37-.03.01.64.04 2.52.3 5.05.2 1.86.46 2.96.65 3.3.57 1 1.27 1.05 1.83 1.05.36 0 1.12-.1 1.05-.73-.03-.31.02-2.22.7-4.96.43-1.79 1.15-3.4 1.41-4 .1-.21.15-.04.15 0-.06 1.22-.18 5.25.32 7.46.68 2.98 2.65 3.32 3.34 3.32 1.47 0 2.67-1.12 3.07-4.05.1-.7-.05-1.25-.48-1.25Z" fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <a href="/accounts/login/?next=%2Fcodenotchmad%2F&amp;source=desktop_nav" role="link" tabindex="0">Entrar</a>
+                </div>
+                <div>
+                    <a href="/accounts/emailsignup/" role="link" tabindex="0">Registrarte</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div>
+            <header>
+                <div>
+                    <canvas height="336" width="336" style="left: -9px; position: absolute; top: -9px; height: 168px; width: 168px;">
+                        <span role="link" tabindex="-1" style="height: 150px; width: 150px;">
+                            <img alt="Foto del perfil de codenotchmad" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/324878496_126945983591363_4572773582372005493_n.jpg?stp=dst-jpg_s320x320&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=FxDuLkigIYIAX_G3HKV&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAKhW90FLZ-djW1P5IX0_v6kIoCbT7tMMXchh8jrBwWhA&amp;oe=6546BE35&amp;_nc_sid=8b3546">
+                        </span>
+                    </canvas>
+                </div>
+                <section>
+                    <div>
+                        <h2>codenotchmad</h2>
+                        <div>
+                            <div>
+                                <button>Seguir</button>
+                            </div>
+                            <div>
+                                <button>Enviar mensaje</button>
+                            </div>
+                        </div>
+                        <div>
+                            <svg aria-label="Opciones" fill="currentColor" height="32" role="img" viewBox="0 0 24 24" width="32">
+                                <title>Opciones</title>
+                                <circle cx="12" cy="12" r="1.5"></circle>
+                                <circle cx="6" cy="12" r="1.5"></circle>
+                                <circle cx="18" cy="12" r="1.5"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div></div>
+                    <ul>
+                        <li>
+                            <button type="button"><span>198</span> publicaciones</button>
+                        </li>
+                        <li>
+                            <button type="button"><span>7982</span> seguidores</button>
+                        </li>
+                        <li>
+                            <button type="button"><span>1752</span> seguidos</button>
+                        </li>
+                    </ul>
+                    <div>
+                        <div>
+                            <span>Codenotch</span>
+                        </div>
+                        <div></div>
+                        <div>
+                            <div>Educación</div>
+                        </div>
+                        <h1>
+                            💻 Desarrollo Web Full Stack y Data Science
+                            <br>
+                            📍 Online, presencial o híbrido
+                            <br>
+                            🚀 ¡Un nuevo reto te espera!
+                            <br>
+                            🔵 More than learn. Become
+                        </h1>
+                        <h1>calle Santo Ángel, 48, Madrid, Spain</h1>
+                        <div>
+                            <span>
+                                <svg aria-label="Icono de enlace" fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12">
+                                    <title>Icono de enlace</title>
+                                    <path d="m9.726 5.123 1.228-1.228a6.47 6.47 0 0 1 9.15 9.152l-1.227 1.227m-4.603 4.603-1.228 1.228a6.47 6.47 0 0 1-9.15-9.152l1.227-1.227" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="8.471" x2="15.529" y1="15.529" y2="8.471"></line>
+                                </svg>
+                            </span>
+                            <a href="https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fcodenotch&amp;e=AT2Vg3oKBNe3IQDoLxR9k8_Nwk2hIu_uwzRIR1GRcoI2LUjcFAu3q6qeWuujMSnzn70QtWEcu-bXXn0MYNKR_gqqBgFQuU4y" target="_blank">
+                                <span>
+                                    <span>linktr.ee/codenotch</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </header>
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <canvas height="174" width="174" style="left: -5px; position: absolute; top: -5px; height: 87px; width: 87px;"></canvas>
+                            <div style="height: 77px; width: 77px;">
+                                <img alt="Foto del perfil de EVENTOS" src="img/eventos.jpg">
+                            </div>
+                        </div>
+                        <span>EVENTOS</span>
+                    </li>
+                    <li>
+                        <div>
+                            <canvas height="174" width="174" style="left: -5px; position: absolute; top: -5px; height: 87px; width: 87px;"></canvas>
+                            <div style="height: 77px; width: 77px;">
+                                <img alt="Foto del perfil de ALUMNOS" src="img/alumnos.jpg">
+                            </div>
+                        </div>
+                        <span>ALUMNOS</span>
+                    </li>
+                    <li>
+                        <div>
+                            <canvas height="174" width="174" style="left: -5px; position: absolute; top: -5px; height: 87px; width: 87px;"></canvas>
+                            <div style="height: 77px; width: 77px;">
+                                <img alt="Foto del perfil de CONÓCENOS" src="img/conocenos.jpg">
+                            </div>
+                        </div>
+                        <span>CONÓCENOS</span>
+                    </li>
+                    <li>
+                        <div>
+                            <canvas height="174" width="174" style="left: -5px; position: absolute; top: -5px; height: 87px; width: 87px;"></canvas>
+                            <div style="height: 77px; width: 77px;">
+                                <img alt="Foto del perfil de COMUNIDAD" src="img/comunidad.jpg">
+                            </div>
+                        </div>
+                        <span>COMUNIDAD</span>
+                    </li>
+                    <li>
+                        <div>
+                            <canvas height="174" width="174" style="left: -5px; position: absolute; top: -5px; height: 87px; width: 87px;"></canvas>
+                            <div style="height: 77px; width: 77px;">
+                                <img alt="Foto del perfil de EMPLEO" src="img/empleo.jpg">
+                            </div>
+                        </div>
+                        <span>EMPLEO</span>
+                    </li>
+                    <li>
+                        <div>
+                            <canvas height="174" width="174" style="left: -5px; position: absolute; top: -5px; height: 87px; width: 87px;"></canvas>
+                            <div style="height: 77px; width: 77px;">
+                                <img alt="Foto del perfil de FAQ" src="img/faq.jpg">
+                            </div>
+                        </div>
+                        <span>FAQ</span>
+                    </li>
+                </ul>
+            </div>
+            <div role="tablist">
+                <a aria-selected="true" href="/codenotchmad/" role="tab" tabindex="0">
+                    <div>
+                        <svg fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12">
+                            <title></title>
+                            <rect fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="18" x="3" y="3"></rect>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="9.015" x2="9.015" y1="3" y2="21"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="14.985" x2="14.985" y1="3" y2="21"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="9.015" y2="9.015"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="21" x2="3" y1="14.985" y2="14.985"></line>
+                        </svg>
+                        <span>Publicaciones</span>
+                    </div>
+                </a>
+                <a aria-selected="false" href="/codenotchmad/reels/" role="tab" tabindex="0">
+                    <div>
+                        <svg fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12">
+                            <title></title>
+                            <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049" x2="21.95" y1="7.002" y2="7.002"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line>
+                            <path d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                            <path d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z" fill-rule="evenodd"></path>
+                        </svg>
+                        <span>Reels</span>
+                    </div>
+                </a>
+                <a aria-selected="false" href="/codenotchmad/guides/" role="tab" tabindex="0">
+                    <div>
+                        <svg fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12">
+                            <title></title>
+                            <path d="M22.626 1.22a1.002 1.002 0 0 0-.843-.196L12 3.198 2.217 1.024A1 1 0 0 0 1 2v17.778a1 1 0 0 0 .783.976l10 2.222a.994.994 0 0 0 .214.024h.005a1.01 1.01 0 0 0 .215-.024l10-2.222a1 1 0 0 0 .783-.976V2a1.001 1.001 0 0 0-.374-.78ZM11 20.753l-8-1.777V3.246l8 1.778Zm10-1.777-8 1.777V5.023l8-1.776Zm-5.252-7.645a.987.987 0 0 0 .217-.024l2.5-.556a1 1 0 0 0 .783-.976v-2.77a1 1 0 0 0-1.217-.975l-2.5.555a1 1 0 0 0-.783.976v2.77a1 1 0 0 0 1 1Zm2.283 4.21-2.5.555a1 1 0 1 0 .434 1.952l2.5-.555a1 1 0 1 0-.434-1.952ZM5.535 10.75l2.5.556a.986.986 0 0 0 .217.024 1 1 0 0 0 1-1V7.56a1 1 0 0 0-.783-.976l-2.5-.555a1 1 0 0 0-1.217.976v2.77a1 1 0 0 0 .783.976Zm2.934 5.345-2.5-.555a1 1 0 1 0-.434 1.952l2.5.555a1 1 0 1 0 .434-1.952Zm9.562-3.926-2.5.556a1 1 0 1 0 .434 1.952l2.5-.556a1 1 0 1 0-.434-1.952Z"></path>
+                        </svg>
+                        <span>Guías</span>
+                    </div>
+                </a>
+                <a aria-selected="false" href="/accounts/login/?next=%2Fcodenotchmad%2Ftagged%2F&amp;source=profile_tagged_tab" role="tab" tabindex="0">
+                    <div>
+                        <svg fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12">
+                            <title></title>
+                            <path d="M10.201 3.797 12 1.997l1.799 1.8a1.59 1.59 0 0 0 1.124.465h5.259A1.818 1.818 0 0 1 22 6.08v14.104a1.818 1.818 0 0 1-1.818 1.818H3.818A1.818 1.818 0 0 1 2 20.184V6.08a1.818 1.818 0 0 1 1.818-1.818h5.26a1.59 1.59 0 0 0 1.123-.465Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                            <path d="M18.598 22.002V21.4a3.949 3.949 0 0 0-3.948-3.949H9.495A3.949 3.949 0 0 0 5.546 21.4v.603" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                            <circle cx="12.072" cy="11.075" fill="none" r="3.556" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                        </svg>
+                        <span>Etiquetadas</span>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <article>
+                    <div>
+                        <div>
+                            <a href="/p/CyBff9_Ntnf/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="AHORA SÍ QUE SÍ" crossorigin="anonymous" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t39.30808-6/386604230_18200625712279141_4202448086511852488_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=-_rmqjx64uwAX8UAE2y&amp;edm=AOQ1c0wAAAAA&amp;ccb=7-5&amp;oh=00_AfDfoR6zEcgjlLe8En_XNi9T8WvgbGkp8J83bovaYCv4zw&amp;oe=6546F6CF&amp;_nc_sid=8b3546" style="object-fit: cover;">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Secuencia" fill="currentColor" height="22" role="img" viewBox="0 0 48 48" width="22">
+                                        <title>Secuencia</title>
+                                        <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/p/CxyBoGWNIZ_/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="MEJORA TU JUEGO" crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="234.6640625px" srcset="https://instagram.fbcn2-1.fna.fbcdn.net/v/t39.30808-6/383236147_18199772809279141_2985815073798234803_n.jpg?stp=dst-jpg_e15_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=kFDZM9ZRk1IAX-RMMug&amp;edm=AOQ1c0wAAAAA&amp;ccb=7-5&amp;oh=00_AfBzxSERP5oge3jU79gO2jHXynEPNXTK_O3PyIwjXEsquw&amp;oe=6546AAB8&amp;_nc_sid=8b3546 150w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t39.30808-6/383236147_18199772809279141_2985815073798234803_n.jpg?stp=dst-jpg_e15_s240x240&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=kFDZM9ZRk1IAX-RMMug&amp;edm=AOQ1c0wAAAAA&amp;ccb=7-5&amp;oh=00_AfDc6tCA7TEfRAYCY5ZWGc6kWGbQrAwENAFiqvp_6GfTsw&amp;oe=6546AAB8&amp;_nc_sid=8b3546 240w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t39.30808-6/383236147_18199772809279141_2985815073798234803_n.jpg?stp=dst-jpg_e15_s320x320&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=kFDZM9ZRk1IAX-RMMug&amp;edm=AOQ1c0wAAAAA&amp;ccb=7-5&amp;oh=00_AfDopCeB1KtqsKNLGpwd4Bpwh--_7LsIRN5C1VfKRvUVjw&amp;oe=6546AAB8&amp;_nc_sid=8b3546 320w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t39.30808-6/383236147_18199772809279141_2985815073798234803_n.jpg?stp=dst-jpg_e15_s480x480&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=kFDZM9ZRk1IAX-RMMug&amp;edm=AOQ1c0wAAAAA&amp;ccb=7-5&amp;oh=00_AfAlkJiNq47ummZaafS5HeBfDDpST9Pw4DVvD8K0bIK0Uw&amp;oe=6546AAB8&amp;_nc_sid=8b3546 480w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t39.30808-6/383236147_18199772809279141_2985815073798234803_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=kFDZM9ZRk1IAX-RMMug&amp;edm=AOQ1c0wAAAAA&amp;ccb=7-5&amp;oh=00_AfBDrVma8xVNkugJvkQeNApZnhCr2wQhV-mG53hJggRB-Q&amp;oe=6546AAB8&amp;_nc_sid=8b3546 640w" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t39.30808-6/383236147_18199772809279141_2985815073798234803_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=kFDZM9ZRk1IAX-RMMug&amp;edm=AOQ1c0wAAAAA&amp;ccb=7-5&amp;oh=00_AfBDrVma8xVNkugJvkQeNApZnhCr2wQhV-mG53hJggRB-Q&amp;oe=6546AAB8&amp;_nc_sid=8b3546">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/reel/CxvrvKZN89C/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="Esta es tu señal para un afterwork productivo!" crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="234.6640625px" srcset="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/382939674_1353318382274651_4665967362580993007_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=LJ42dbzBTBIAX-XCZoG&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCZRdyogc-vzByOltVNZ-GJ_lZe9YqSburru1j55X9KFA&amp;oe=6544367C&amp;_nc_sid=8b3546 150w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/382939674_1353318382274651_4665967362580993007_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s240x240&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=LJ42dbzBTBIAX-XCZoG&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBx_vVb0Y7v0vYe2MvGFpWMveBwOQP4N5Wx54Mh553ovA&amp;oe=6544367C&amp;_nc_sid=8b3546 240w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/382939674_1353318382274651_4665967362580993007_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s320x320&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=LJ42dbzBTBIAX-XCZoG&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfC9eFQ8mcn8CqN5jIcTq0dDEb5qZ1WDeKHv1AOw1pCNhQ&amp;oe=6544367C&amp;_nc_sid=8b3546 320w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/382939674_1353318382274651_4665967362580993007_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s480x480&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=LJ42dbzBTBIAX-XCZoG&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCqkJuEV1RmKBvxKIoTvI-QtUsxGn0YR2l7U5E_85ojfA&amp;oe=6544367C&amp;_nc_sid=8b3546 480w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/382939674_1353318382274651_4665967362580993007_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=LJ42dbzBTBIAX-XCZoG&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCdNkrxNDCnWcBE0zwHKX8wmA3_IAFurVPQ5sr0WY77xg&amp;oe=6544367C&amp;_nc_sid=8b3546 640w" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/382939674_1353318382274651_4665967362580993007_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=LJ42dbzBTBIAX-XCZoG&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCdNkrxNDCnWcBE0zwHKX8wmA3_IAFurVPQ5sr0WY77xg&amp;oe=6544367C&amp;_nc_sid=8b3546">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Clip" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+                                        <title>Clip</title>
+                                        <path d="m12.823 1 2.974 5.002h-5.58l-2.65-4.971c.206-.013.419-.022.642-.027L8.55 1Zm2.327 0h.298c3.06 0 4.468.754 5.64 1.887a6.007 6.007 0 0 1 1.596 2.82l.07.295h-4.629L15.15 1Zm-9.667.377L7.95 6.002H1.244a6.01 6.01 0 0 1 3.942-4.53Zm9.735 12.834-4.545-2.624a.909.909 0 0 0-1.356.668l-.008.12v5.248a.91.91 0 0 0 1.255.84l.109-.053 4.545-2.624a.909.909 0 0 0 .1-1.507l-.1-.068-4.545-2.624Zm-14.2-6.209h21.964l.015.36.003.189v6.899c0 3.061-.755 4.469-1.888 5.64-1.151 1.114-2.5 1.856-5.33 1.909l-.334.003H8.551c-3.06 0-4.467-.755-5.64-1.889-1.114-1.15-1.854-2.498-1.908-5.33L1 15.45V8.551l.003-.189Z" fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="/p/CvNLlJyt3ze/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="¡El futuro que mereces comienza hoy!" crossorigin="anonymous" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/362994881_300482572502383_8562047288018101632_n.jpg?stp=dst-jpg_e35&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=107&amp;_nc_ohc=M_SKIl2061EAX9ofMXP&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAv2SEvNvTkfOc5593rjyxcZVJjTtrhNE4HchrR9XJXPQ&amp;oe=65485DB7&amp;_nc_sid=8b3546" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" style="object-fit: cover;">
+                                    </div>
+                                    <div class="_aagw"></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Secuencia" fill="currentColor" height="22" role="img" viewBox="0 0 48 48" width="22">
+                                        <title>Secuencia</title>
+                                        <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/reel/Curgx0BOqww/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="¡Enhorabuena, TopNotchCoders!" crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="234.6640625px" srcset="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/359773142_592359019748612_5793429494311666824_n.jpg?stp=c0.350.900.900a_dst-jpg_e15_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=WPRE-gnx9ooAX_Nw4MO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBWkAL59_Fx2TbVmoBRJnkj-0vfi6sIBNqxp1mpUG5Y3w&amp;oe=65440A6B&amp;_nc_sid=8b3546 150w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/359773142_592359019748612_5793429494311666824_n.jpg?stp=c0.350.900.900a_dst-jpg_e15_s240x240&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=WPRE-gnx9ooAX_Nw4MO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBov0eei2PkwYOxdpeS31LPePh5EbBeTxM5ty9g9DkF1w&amp;oe=65440A6B&amp;_nc_sid=8b3546 240w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/359773142_592359019748612_5793429494311666824_n.jpg?stp=c0.350.900.900a_dst-jpg_e15_s320x320&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=WPRE-gnx9ooAX_Nw4MO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBr7Ta8q6H19CvskDtiNRxtiIq5pX3cqBIAJfGY-chJWg&amp;oe=65440A6B&amp;_nc_sid=8b3546 320w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/359773142_592359019748612_5793429494311666824_n.jpg?stp=c0.350.900.900a_dst-jpg_e15_s480x480&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=WPRE-gnx9ooAX_Nw4MO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCMpdi3AudVIIHAVlSKc3izQoHJ8M5LeHV58G3y37rCTw&amp;oe=65440A6B&amp;_nc_sid=8b3546 480w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/359773142_592359019748612_5793429494311666824_n.jpg?stp=c0.350.900.900a_dst-jpg_e15_s640x640&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=WPRE-gnx9ooAX_Nw4MO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBJRZSdSsmngjzjFII7r4aVsyvJ9FajOYACnkdlCybjOg&amp;oe=65440A6B&amp;_nc_sid=8b3546 640w" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/359773142_592359019748612_5793429494311666824_n.jpg?stp=c0.350.900.900a_dst-jpg_e15_s640x640&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=WPRE-gnx9ooAX_Nw4MO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBJRZSdSsmngjzjFII7r4aVsyvJ9FajOYACnkdlCybjOg&amp;oe=65440A6B&amp;_nc_sid=8b3546">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Clip" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+                                        <title>Clip</title>
+                                        <path d="m12.823 1 2.974 5.002h-5.58l-2.65-4.971c.206-.013.419-.022.642-.027L8.55 1Zm2.327 0h.298c3.06 0 4.468.754 5.64 1.887a6.007 6.007 0 0 1 1.596 2.82l.07.295h-4.629L15.15 1Zm-9.667.377L7.95 6.002H1.244a6.01 6.01 0 0 1 3.942-4.53Zm9.735 12.834-4.545-2.624a.909.909 0 0 0-1.356.668l-.008.12v5.248a.91.91 0 0 0 1.255.84l.109-.053 4.545-2.624a.909.909 0 0 0 .1-1.507l-.1-.068-4.545-2.624Zm-14.2-6.209h21.964l.015.36.003.189v6.899c0 3.061-.755 4.469-1.888 5.64-1.151 1.114-2.5 1.856-5.33 1.909l-.334.003H8.551c-3.06 0-4.467-.755-5.64-1.889-1.114-1.15-1.854-2.498-1.908-5.33L1 15.45V8.551l.003-.189Z" fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div><a href="/p/Cul_Xrdskho/" role="link" tabindex="0">
+                            <div>
+                                <div>
+                                    <img alt="¡En Codenotch iniciamos la semana con mucha energía!" crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="234.6640625px" srcset="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/360026482_312035867830187_2265975000874758141_n.jpg?stp=c0.135.1080.1080a_dst-jpg_e15_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=-DuS0gfWsUUAX-UbOsO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAn3X6anRRUMPeVZI0M52wXQUEkNi1MFwfqO0oG0D9cnA&amp;oe=65470E91&amp;_nc_sid=8b3546 150w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/360026482_312035867830187_2265975000874758141_n.jpg?stp=c0.135.1080.1080a_dst-jpg_e15_s240x240&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=-DuS0gfWsUUAX-UbOsO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfA-EbDt6e99iCE1eRTs4Dwca4oCEnjZsIqQ32hqrpQ4FQ&amp;oe=65470E91&amp;_nc_sid=8b3546 240w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/360026482_312035867830187_2265975000874758141_n.jpg?stp=c0.135.1080.1080a_dst-jpg_e15_s320x320&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=-DuS0gfWsUUAX-UbOsO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBX7361hGnqQJ7iWEhHK7aBdqvyfuJbVUPv06XWxQJ-tw&amp;oe=65470E91&amp;_nc_sid=8b3546 320w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/360026482_312035867830187_2265975000874758141_n.jpg?stp=c0.135.1080.1080a_dst-jpg_e15_s480x480&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=-DuS0gfWsUUAX-UbOsO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCY7hbN5ilrup67bOoxtbjUvyVkMfz8LqR-RckSPa9i6Q&amp;oe=65470E91&amp;_nc_sid=8b3546 480w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/360026482_312035867830187_2265975000874758141_n.jpg?stp=c0.135.1080.1080a_dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=-DuS0gfWsUUAX-UbOsO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBXnYRipGgHixJFmENzBxUCjh-C_KSnIJwrPQA6FJ49bg&amp;oe=65470E91&amp;_nc_sid=8b3546 640w" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/360026482_312035867830187_2265975000874758141_n.jpg?stp=c0.135.1080.1080a_dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=-DuS0gfWsUUAX-UbOsO&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBXnYRipGgHixJFmENzBxUCjh-C_KSnIJwrPQA6FJ49bg&amp;oe=65470E91&amp;_nc_sid=8b3546">
+                                </div>
+                                <div></div>
+                            </div>
+                            <div></div>
+                        </a>
+                    </div>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="/p/Ctb-oExIUfo/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="Algunos de nuestros alumnos del último Bootcamp" crossorigin="anonymous" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/353850632_651100623101912_2476517141556446211_n.jpg?stp=dst-jpg_e15_fr_p1080x1080&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=V2nWOjUt6k0AX-UVYFY&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfDhMKxHFroX3jHzIPP30ENYF7dzYdeiKMELB5R2T75r_Q&amp;oe=65471FC6&amp;_nc_sid=8b3546" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" style="object-fit: cover;">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Secuencia" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="22" role="img" viewBox="0 0 48 48" width="22">
+                                        <title>Secuencia</title>
+                                        <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/p/CsG7YfiNjTe/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="¿Alguna vez te ha pasado que te encuentras trabajando en un proyecto?" crossorigin="anonymous" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/345801593_1002938807541697_2524718369472001983_n.jpg?stp=dst-jpg_e35&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=-ZodGlAt6E0AX8hC2ym&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAXo5ogHmO-ZnUXZstS-JXXtDzUUBLoSX-kGmFGcxey2Q&amp;oe=65476BC3&amp;_nc_sid=8b3546" style="object-fit: cover;">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Secuencia" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="22" role="img" viewBox="0 0 48 48" width="22">
+                                        <title>Secuencia</title>
+                                        <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/reel/Cr3QUv8Azvk/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="¡Feliz viernes, programadores!"  crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="234.6640625px" srcset="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/345248050_1597383080746144_5092694679646543127_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=104&amp;_nc_ohc=fSt-yNCI6LEAX_3Lg1Y&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCAaY8tA5Jxq3-Iu-lpcAM9ssbvCx32PHH7wF1ng-7nGg&amp;oe=654460CE&amp;_nc_sid=8b3546 150w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/345248050_1597383080746144_5092694679646543127_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s240x240&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=104&amp;_nc_ohc=fSt-yNCI6LEAX_3Lg1Y&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCtbpdQgy9GqVLOEQo6cuWgLiWhg3QufF6oMuc7mvawKQ&amp;oe=654460CE&amp;_nc_sid=8b3546 240w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/345248050_1597383080746144_5092694679646543127_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s320x320&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=104&amp;_nc_ohc=fSt-yNCI6LEAX_3Lg1Y&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAwS-kxO8rk5YfVYMlunNsCtuZ4yvsuoBLQImtfD6lf1Q&amp;oe=654460CE&amp;_nc_sid=8b3546 320w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/345248050_1597383080746144_5092694679646543127_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s480x480&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=104&amp;_nc_ohc=fSt-yNCI6LEAX_3Lg1Y&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfD6O5mSxL59hQp6gG-JU-86tGLeApgv0fFbaQZvrA-C9g&amp;oe=654460CE&amp;_nc_sid=8b3546 480w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/345248050_1597383080746144_5092694679646543127_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=104&amp;_nc_ohc=fSt-yNCI6LEAX_3Lg1Y&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCR2C5DyjUQANS0iimEQ3qUhqDxuUyexgBq3HO37GQgdg&amp;oe=654460CE&amp;_nc_sid=8b3546 640w" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/345248050_1597383080746144_5092694679646543127_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=104&amp;_nc_ohc=fSt-yNCI6LEAX_3Lg1Y&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCR2C5DyjUQANS0iimEQ3qUhqDxuUyexgBq3HO37GQgdg&amp;oe=654460CE&amp;_nc_sid=8b3546">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Clip" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+                                        <title>Clip</title>
+                                        <path d="m12.823 1 2.974 5.002h-5.58l-2.65-4.971c.206-.013.419-.022.642-.027L8.55 1Zm2.327 0h.298c3.06 0 4.468.754 5.64 1.887a6.007 6.007 0 0 1 1.596 2.82l.07.295h-4.629L15.15 1Zm-9.667.377L7.95 6.002H1.244a6.01 6.01 0 0 1 3.942-4.53Zm9.735 12.834-4.545-2.624a.909.909 0 0 0-1.356.668l-.008.12v5.248a.91.91 0 0 0 1.255.84l.109-.053 4.545-2.624a.909.909 0 0 0 .1-1.507l-.1-.068-4.545-2.624Zm-14.2-6.209h21.964l.015.36.003.189v6.899c0 3.061-.755 4.469-1.888 5.64-1.151 1.114-2.5 1.856-5.33 1.909l-.334.003H8.551c-3.06 0-4.467-.755-5.64-1.889-1.114-1.15-1.854-2.498-1.908-5.33L1 15.45V8.551l.003-.189Z" fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="/reel/Cq-6zv-oFU8/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="¿Eres un apasionado de la tecnología y estudias desarrollo de software?" crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="234.6640625px" srcset="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/329087814_3375348382719107_7970665141599761670_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=gCD_VrWavBAAX9fSNPV&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAlkz5oKdqa3KSN5HHdhGfcW59Pz87za195j18ltW9wNQ&amp;oe=65441F24&amp;_nc_sid=8b3546 150w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/329087814_3375348382719107_7970665141599761670_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s240x240&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=gCD_VrWavBAAX9fSNPV&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBnGlYPoYgt6kF0-QsPOmHm59rN4yDHLBTwzn2wCk4YNA&amp;oe=65441F24&amp;_nc_sid=8b3546 240w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/329087814_3375348382719107_7970665141599761670_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s320x320&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=gCD_VrWavBAAX9fSNPV&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCgM4NnVNHDlP5Xz2FPNyANcBuXQUpWOKRRJVuisKX_hg&amp;oe=65441F24&amp;_nc_sid=8b3546 320w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/329087814_3375348382719107_7970665141599761670_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e15_s480x480&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=gCD_VrWavBAAX9fSNPV&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfDgvCSGqh77JpUBP1KXQdS6vITx5t9XLU-qsKYIXfj2KQ&amp;oe=65441F24&amp;_nc_sid=8b3546 480w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/329087814_3375348382719107_7970665141599761670_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=gCD_VrWavBAAX9fSNPV&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBQg17caMhm3LfxOexyY7ongy8iOH02qGBD1uocV1RWug&amp;oe=65441F24&amp;_nc_sid=8b3546 640w" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/329087814_3375348382719107_7970665141599761670_n.jpg?stp=c0.420.1080.1080a_dst-jpg_e35_s640x640_sh0.08&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=gCD_VrWavBAAX9fSNPV&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBQg17caMhm3LfxOexyY7ongy8iOH02qGBD1uocV1RWug&amp;oe=65441F24&amp;_nc_sid=8b3546">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1">
+                                    <svg aria-label="Clip" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+                                        <title>Clip</title>
+                                        <path d="m12.823 1 2.974 5.002h-5.58l-2.65-4.971c.206-.013.419-.022.642-.027L8.55 1Zm2.327 0h.298c3.06 0 4.468.754 5.64 1.887a6.007 6.007 0 0 1 1.596 2.82l.07.295h-4.629L15.15 1Zm-9.667.377L7.95 6.002H1.244a6.01 6.01 0 0 1 3.942-4.53Zm9.735 12.834-4.545-2.624a.909.909 0 0 0-1.356.668l-.008.12v5.248a.91.91 0 0 0 1.255.84l.109-.053 4.545-2.624a.909.909 0 0 0 .1-1.507l-.1-.068-4.545-2.624Zm-14.2-6.209h21.964l.015.36.003.189v6.899c0 3.061-.755 4.469-1.888 5.64-1.151 1.114-2.5 1.856-5.33 1.909l-.334.003H8.551c-3.06 0-4.467-.755-5.64-1.889-1.114-1.15-1.854-2.498-1.908-5.33L1 15.45V8.551l.003-.189Z" fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/p/Cq5O83XIoBR/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="📣 ¡Atención!" crossorigin="anonymous" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/340812699_773547247493045_3956160560744023301_n.jpg?stp=dst-jpg_e35&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=105&amp;_nc_ohc=Hohwh8rRgJoAX_mvHs6&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfD0YbEGuHXlPCcPm_qCOEGBZAzEYR4_vBGxGsiCF4PzHQ&amp;oe=65468731&amp;_nc_sid=8b3546" class="x5yr21d xu96u03 x10l6tqk x13vifvy x87ps6o xh8yej3" style="object-fit: cover;">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Secuencia" fill="currentColor" height="22" role="img" viewBox="0 0 48 48" width="22">
+                                        <title>Secuencia</title>
+                                        <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="/reel/Cqn1SOJD1nr/" role="link" tabindex="0">
+                                <div>
+                                    <div>
+                                        <img alt="Hoy hemos tenido la suerte de colarnos en clase de Menchu" crossorigin="anonymous" decoding="auto" style="object-fit: cover;" sizes="234.6640625px" srcset="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/339156282_1202830467103345_4951564390351618488_n.jpg?stp=c0.280.720.720a_dst-jpg_e15_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=9USrJM11sTYAX9U20nd&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBkzsphp859_eL99w50I7An0Xpb1egcsv9MQMpaxxq8Lw&amp;oe=654455BE&amp;_nc_sid=8b3546 150w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/339156282_1202830467103345_4951564390351618488_n.jpg?stp=c0.280.720.720a_dst-jpg_e15_s240x240&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=9USrJM11sTYAX9U20nd&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCOKWHb20gk1vhXC8DKjISnJ8V_GxZOh_Ib6xruLGZJ8w&amp;oe=654455BE&amp;_nc_sid=8b3546 240w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/339156282_1202830467103345_4951564390351618488_n.jpg?stp=c0.280.720.720a_dst-jpg_e15_s320x320&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=9USrJM11sTYAX9U20nd&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfC9DCdQtmFaqOyzT-RIS9EkqQJBukOvn3GPMY6I9TE5Sw&amp;oe=654455BE&amp;_nc_sid=8b3546 320w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/339156282_1202830467103345_4951564390351618488_n.jpg?stp=c0.280.720.720a_dst-jpg_e15_s480x480&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=9USrJM11sTYAX9U20nd&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBtsz2_5VMua1pYnqxnfSluvUnJ8trOgX9__GqhgN6Q6g&amp;oe=654455BE&amp;_nc_sid=8b3546 480w,https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/339156282_1202830467103345_4951564390351618488_n.jpg?stp=c0.280.720.720a_dst-jpg_e15_s640x640&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=9USrJM11sTYAX9U20nd&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBVMl2SmyBHshNdl8BmYahd7fMa58NcDSyXbbVAC2vC7g&amp;oe=654455BE&amp;_nc_sid=8b3546 640w" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-15/339156282_1202830467103345_4951564390351618488_n.jpg?stp=c0.280.720.720a_dst-jpg_e15_s640x640&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=9USrJM11sTYAX9U20nd&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBVMl2SmyBHshNdl8BmYahd7fMa58NcDSyXbbVAC2vC7g&amp;oe=654455BE&amp;_nc_sid=8b3546">
+                                    </div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <svg aria-label="Clip" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="18" role="img" viewBox="0 0 24 24" width="18">
+                                        <title>Clip</title>
+                                        <path d="m12.823 1 2.974 5.002h-5.58l-2.65-4.971c.206-.013.419-.022.642-.027L8.55 1Zm2.327 0h.298c3.06 0 4.468.754 5.64 1.887a6.007 6.007 0 0 1 1.596 2.82l.07.295h-4.629L15.15 1Zm-9.667.377L7.95 6.002H1.244a6.01 6.01 0 0 1 3.942-4.53Zm9.735 12.834-4.545-2.624a.909.909 0 0 0-1.356.668l-.008.12v5.248a.91.91 0 0 0 1.255.84l.109-.053 4.545-2.624a.909.909 0 0 0 .1-1.507l-.1-.068-4.545-2.624Zm-14.2-6.209h21.964l.015.36.003.189v6.899c0 3.061-.755 4.469-1.888 5.64-1.151 1.114-2.5 1.856-5.33 1.909l-.334.003H8.551c-3.06 0-4.467-.755-5.64-1.889-1.114-1.15-1.854-2.498-1.908-5.33L1 15.45V8.551l.003-.189Z" fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <div>
+                    <div>
+                        <button>Mostrar más publicaciones de codenotchmad</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <span>Cuentas relacionadas</span>
+                        <a href="/codenotchmad/related_profiles/" role="link" tabindex="0">
+                            <span dir="auto" style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 18px;">Ver todo</span>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/corecodeschool/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de corecodeschool" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/272103442_445871183840630_5928851131128040891_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=L3jTIOlktHoAX_b3SnF&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBNDOJhCLT_FCvgSCGt1NlvAJljX1KV3wzSiVbW4Q9apg&amp;oe=6547BCB2&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>corecodeschool</span>
+                                        <span>CORE Code</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/inviertis/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de inviertis" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/129685735_152013646672411_8539496838089296368_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=107&amp;_nc_ohc=0GyVU92kmUwAX8xZuSa&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfB1QMoBaxA4aKxbfO8KwcICuTLoRFHRfhpc07bLdzyCyA&amp;oe=654710E1&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>invertis</span>
+                                        <span>Invertis | Platafo...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/fazttech/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de fazttech" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/123510449_237219234714129_6427422721124986301_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=109&amp;_nc_ohc=3xWPIR4P22YAX-A3_sF&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfB2NA6Y4irRgL4qGJOtBqfAxxWpLkNA7aa9RFiHkgqJSA&amp;oe=65485AE8&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>fazttech</span>
+                                        <span>Fazt</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/pildorasinformaticas/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de pildorasinformaticas" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/245267345_2750565295241970_2909121996353093912_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=106&amp;_nc_ohc=Dny5D4ubWwEAX8OMe6K&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfArhQvqLcTevVTnkdpQ7-KoabS6vcMFVcKgwAcaxXbl0Q&amp;oe=65484CCA&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>pildorasinform...</span>
+                                        <span>Píldoras Informá...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/programate_hoy/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de programate_hoy" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/198815725_155429199960463_2379092450729627995_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=107&amp;_nc_ohc=H8pet4v0s-IAX-UHS2g&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfABoOxTYztGWfuIRZzFb76QWAXWS9JOsY_EWIFtSPP3MA&amp;oe=65472826&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>programate_hoy</span>
+                                        <span>Programate</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/eduval.dev/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de eduval.dev" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/320925453_841563060456449_5981349290534152726_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=105&amp;_nc_ohc=Aq1k-ucCxQsAX-Np2jE&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAZC2h5YChwj3IGTGpHbPpN1DSw5y-QvIIIsSDrLiWfBg&amp;oe=65486BE0&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>eduval.dev</span>
+                                        <span>Consejos de pro...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/mastermarketingupv/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de mastermarketingupv" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/17126820_1829578857294471_8173789429664579584_a.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=103&amp;_nc_ohc=abNQYnLF-c4AX_vBSDf&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBx3lHB8MeqgmOY4U89z_YwZKMpuNvyDFV1XIwapvbMgA&amp;oe=6547946F&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>mastermarketi...</span>
+                                        <span>MACOM UPV</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/pontia.tech/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de pontia.tech" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/269607695_4484787021631572_2945216233859810655_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=100&amp;_nc_ohc=dgy6ykDf7WsAX9IK8nC&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCQM2k-TA06eusFlxDz8Oe9LScdSJSa4ZJKa2mQY61Qlw&amp;oe=65468C80&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>pontia.tech</span>
+                                        <span>PONTIA - Data ...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/idiomesub/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de idiomesub" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/292213467_457684405722606_4481218052266918744_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=106&amp;_nc_ohc=dtJp06evVQcAX-Czkeo&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAdJ_0K3SPOukKGKb3pcoMoi_R8nzJYyXFvVu3wY1yhXg&amp;oe=65484542&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>idiomesub</span>
+                                        <span>Idiomes UB - Es...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/number16school_/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de number16school_" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/329018246_128265743488693_7949363155936919948_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=n1IkxJo1bP0AX_p6aU7&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBy1-tztSFLZ3QClrye9p_ruHh426Z5qX4-wfyEiUjOjg&amp;oe=654783E4&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>number16scho...</span>
+                                        <span>Number 16 Sch...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/institutomedac/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de institutomedac" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/311916446_185210080690218_4046976112335751004_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=106&amp;_nc_ohc=JfdlcRVdrisAX8A01xG&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfAAFxk340GJX5PzfibqREQL1-wkN2NlrU66t9JlFbgmZQ&amp;oe=6547BB74&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>institutomedac</span>
+                                        <span>MEDAC, Institut...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/geekshubs/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de geekshubs" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/50938215_256457775252565_1388198782289575936_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=pHymRsLQKFsAX-f3N2Q&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCM9HH9BbFpeLHLzpzvS93X9DIat8YkB-Cw0DuFPxMZOA&amp;oe=65480D05&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>geekshubs</span>
+                                        <span>GeeksHubs</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/office.madrid/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de office.madrid" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/232396695_837183650523327_2539401127645019455_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=103&amp;_nc_ohc=kXcGI_koxsQAX_4ZOKv&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBH_d52DbWEokNVYoWIA2-bCZO3NQdnfy7GSb6h2YX_Fg&amp;oe=65481A24&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>office.madrid</span>
+                                        <span>Office Madid</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/mugendo.ryu/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de mugendo.ryu" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/320045003_195477123001823_7533361866779601239_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=111&amp;_nc_ohc=7ZR3j0CEH2MAX8yvU45&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfDlXvNKjLmmZooS3CNxr5rVlszBJJ-fQPFS7IVJoj2fdA&amp;oe=6547C1C5&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>mugendo.ryu</span>
+                                        <span>Mugendo-Ryu</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/backroomhmo/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de backroomhmo" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/10632062_706275212794852_19089960_a.jpg?_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=104&amp;_nc_ohc=H6WGNqwjsrQAX8DAKz0&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfC0I-zYVe8zYI3y-0VaS-voct5EBZbasHuLEN_SmZGgbw&amp;oe=6547175A&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>backroomhmo</span>
+                                        <span>backroomhmo</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/securiters/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de securiters" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/271537318_347699003488122_2752356327051933541_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=106&amp;_nc_ohc=AaNWVXfpCXcAX8EVwsU&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfCrm7Mi7TDRyaO01USpfzCN36NwW9SgLJiczeYAHEwsjQ&amp;oe=654783A6&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>securiters</span>
+                                        <span>securiters</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/elrincondechina/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de elrincondechina" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/13696763_315662955431935_1726041819_a.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=107&amp;_nc_ohc=PSJ3eeVT9noAX9yzSsp&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfBZCswbJA2rBfff-_aZkD7HC-OGeZ2h970xQkDAQe_vxA&amp;oe=65484BEE&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>elrincondechina</span>
+                                        <span>El Rincón de Chi...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <i class="bi bi-x"></i>
+                                </div>
+                                <div>
+                                    <div>
+                                        <a href="/emmallensa/" role="link" tabindex="-1" style="height: 54px; width: 54px;">
+                                            <img alt="Foto del perfil de emmallensa" crossorigin="anonymous" draggable="false" src="https://instagram.fbcn2-1.fna.fbcdn.net/v/t51.2885-19/357243942_233722609538396_3028782568913146888_n.jpg?stp=dst-jpg_s150x150&amp;_nc_ht=instagram.fbcn2-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=29GF8EReIdMAX8xQD5L&amp;edm=AOQ1c0wBAAAA&amp;ccb=7-5&amp;oh=00_AfD4Vuusx1QrgYAhEoD-_9mGbZFMTqsrslch7oB2FQKz6A&amp;oe=6547A75A&amp;_nc_sid=8b3546">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span>emmallensa<i class="bi bi-patch-check-fill"></i></span>
+                                        <span>Emma Llensa | ...</span>
+                                        <button>Seguir</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button aria-label="Siguiente"></button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+
+    <footer>
+        <div class="footer-menu-top">
+            <div>
+                <a href="https://about.meta.com/" target="_blank">Meta</a>
+            </div>
+            <div>
+                <a href="https://about.instagram.com/" target="_blank">Información</a>
+            </div>
+            <div>
+                <a href="https://about.instagram.com/blog/" target="_blank">Blog</a>
+            </div>
+            <div>
+                <a href="/about/jobs/">Empleo</a>
+            </div>
+            <div>
+                <a href="https://help.instagram.com/" target="_blank">Ayuda</a>
+            </div>
+            <div>
+                <a href="https://developers.facebook.com/docs/instagram" target="_blank">API</a>
+            </div>
+            <div>
+                <a href="/legal/privacy/">Privacidad</a>
+            </div>
+            <div>
+                <a href="/legal/terms/">Condiciones</a>
+            </div>
+            <div>
+                <a href="/explore/locations/">Ubicaciones</a>
+            </div>
+            <div>
+                <a href="/web/lite/">Instagram Lite</a>
+            </div>
+            <div>
+                <a href="https://www.threads.net/" target="_blank">Threads</a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/help/instagram/261704639352628" target="_blank">Subir contactos y personas no usuarias</a>
+            </div>
+            <div>
+                <a href="https://about.meta.com/technologies/meta-verified/"  target="_blank">Meta verified</a>
+            </div>
+        </div>
+
+        <div class="footer-menu-bottom">
+            <div class="footer-menu-bottom-wrapper-lang">
+                <span>Español (España)</span>
+                <div>
+                    <span style="display: inline-block; transform: rotate(180deg); padding-left: .4rem;">
+                        <svg aria-label="Icono de comilla angular hacia abajo" fill="currentColor" height="12" role="img" viewBox="0 0 24 24" width="12">
+                            <title>Icono de comilla angular hacia abajo</title>
+                            <path d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="footer-menu-bottom-wrapper-copy">
+                <span>© 2023 Instagram from Meta</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
