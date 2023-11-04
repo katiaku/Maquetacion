@@ -1,0 +1,10 @@
+main {
+    width: 100vw;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+    background-image: url('img/fondo-main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
